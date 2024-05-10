@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой любимый вид спорта - Воркаут</title>
+    <link rel="stylesheet" href="style/style.css"> <!-- Подключение файла стилей -->
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav>
+            <ul>
+             <li><a href="#description" >Описание</a></li> <!-- Ссылка на раздел "Описание" -->
+            <li><a href="#photo" >Фото</a></li> <!-- Ссылка на раздел "Фото" -->
+            <li><a href="#video" >Видео</a></li> <!-- Ссылка на раздел "Видео" -->
+            <li><a href="#contact" >Контакт</a></li> <!-- Ссылка на раздел "Контакт" -->
+            </ul>
+        </nav>
+    </header>
+<p id="title"> Мой любимый вид спорта </p>		
+    <!-- Раздел "Описание" -->
+    <section id="description" >
+        <h1>Воркаут</h1>
+        <p style="text-indent:50px;width: 95%;">Уличный воркаут <b>(Street Workout)</b> – это <strong>молодежное направление 
+        в спорте, любительские тренировки на брусьях, турниках, рукоходах, шведских стенках с собственным весом </strong>. 
+        Важно, что воркаут имеет мало общего с гимнастическими упражнениями, которые требуют 
+        определенной техники исполнения. Его философия в том, чтобы каждый человек мог заниматься 
+        атлетикой, самовыражаться, придумывать интересные и безопасные тренировки, улучшая свое здоровье.</p>
+        <button id="learn-more-btn">Узнать больше</button>
+        <div id="more-info" style="display: none;">
+            <p class="info"><i>Дополнительная информация.</i></p>
+            <li><a href="https://srednyadm.ru/msu/administratsiya/munitsipalnoe-byudzhetnoe-uchrezhdenie-kulturyi-kulturno-sportivnyij-
+            tsentr-polyot-mbuk-ksts-polyot/media/2020/6/9/chto-takoe-vorkaut-istoriya-vozniknoveniya-preimuschestva-sovetyi-nachinayuschim/">
+            Что такое воркаут: история возникновения, преимущества, советы начинающим</a></li> <!-- Ссылка на дополнительную информацию -->
+            <li><a href="https://cross.expert/programmy-trenirovok/workout-trenirovki.html">
+            Воркаут тренировки – программа и рекомендации для новичков</a></li> <!-- Ссылка на дополнительную информацию -->
+         </div>
+    </section>
+    <!-- Конец раздела "Описание" -->
+    <!-- Раздел с фотографиями -->
+	<section id="photo" >
+ 		 <h2>Фото</h2>
+        <div class="overlay"></div>
+        <div class="photos">
+            <span> 
+                <a href="https://vk.com/workoutgallery"><img src="image/1.jpg" alt="Воркаут" ></a>  			
+                <p>workout gallery | воркаут галерея</p>
+            </span>
+            <span> 
+                <a href="https://www.freepik.com/photos/street-workout"><img src="image/2.jpg" alt="Воркаут"></a>
+                <p>Фотографии Уличных Тренировок</p>
+            </span>
+            <span> 
+                <a href="https://www.shutterstock.com/search/street-workout"><img src="image/4.jpg" alt="Воркаут"></a>
+                <p>Изображения Street Workout без роялти</p>
+            </span>
+        </div>
+    </section>
+    <!-- Конец раздела с фотографиями -->
+    <!-- Раздел "Видео" -->
+    <section id="video" >
+        <h2>Видео</h2>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YZjqcR0_Agg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- Конец раздела "Видео" -->
+    <!-- Раздел "Контакт" -->
+    <section id="contact">
+        <h3>Контакт</h3>
+        <form id="contact-form" action="submit.php" method="post">
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="6" required></textarea><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    <!-- Конец раздела "Контакт" -->
+    <!-- Подвал сайта -->
+    <footer>
+        <div>
+            <p>© 2024 Все права защищены.</p>
+        </div>
+    </footer>
+    <!-- Кнопка "Прокрутить наверх" -->
+    <button id="scroll-to-top-btn" title="Вернуться наверх">&#8593;</button>
+    <!-- Подключение файла скрипта -->
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* Стили для скрытых элементов */
+.hidden {
+    display: none;
+}
+
+/* Основные стили для страницы */
+body {
+    font-family: Times New Roman, Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для заголовка */
+#title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #339999;
+}
+
+/* Стили для заголовка страницы */
+header {
+    background-color: #3333ff;
+    padding: 10px 0;
+    font-size: 32px;
+    line-height: 60px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Анимация появления пунктов меню */
+@keyframes navItemFade {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили для пунктов меню */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    animation: navItemFade 2.0s ease forwards;
+}
+
+/* Стили для ссылок в меню */
+nav ul li a {
+    color: #ffff33;
+    text-decoration: none;
+}
+
+/* Стили для кнопок */
+button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Стили для разделов */
+section {
+    padding: 5px;
+    margin: 5px;
+    text-align: justify;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #3333ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    -- position: fixed; /* Эта строка похоже лишняя */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Стили для кнопки "Прокрутить вверх" */
+#scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: #555;
+}
+
+/* Стили для формы */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 45%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Стили для блока с фотографиями */
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photos img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.photos p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Стили для кнопки "Узнать больше" */
+#learn-more-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#learn-more-btn:hover {
+    background-color: #555;
+}
+
+/* Дополнительные информационные стили */
+.info {
+    font-size: 18px;
+    color: #ff1100;
+}
